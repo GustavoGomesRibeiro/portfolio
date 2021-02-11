@@ -73,10 +73,14 @@ export default function Knowledge() {
           <Techs>
             <FaAngular size={60} color="#d6002f" />
             <Stack> AngularJs </Stack>
+            <Stack> Conhecimento Básico </Stack>
           </Techs>
           <Techs>
             <FaJava size={60} color="#d6002f" />
             <Stack> Java </Stack>
+            <StackKnowledge> SpringBoot </StackKnowledge>
+            <StackKnowledge> Hibernate </StackKnowledge>
+            <StackKnowledge> Maven </StackKnowledge>
           </Techs>
           <Techs>
             <FaAws size={60} color="#f6981d" />

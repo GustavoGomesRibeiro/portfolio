@@ -7,6 +7,7 @@ import {
   ContainersProjects,
   Projects,
   NameProject,
+  Describe,
 } from './styles';
 
 export default function Project() {
@@ -18,7 +19,10 @@ export default function Project() {
         </Title>
         <ContainersProjects>
           <Projects>
-            <NameProject> Em Breve </NameProject>
+            <NameProject> GeoService </NameProject>
+            <Describe>
+              Projeto React Native desenvolvido com a utilização do expo.
+            </Describe>
           </Projects>
           <Projects>
             <NameProject> Em Breve </NameProject>

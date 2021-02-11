@@ -41,3 +41,10 @@ export const NameProject = styled.h2`
   color: #fff;
   font-family: monospace;
 `;
+
+export const Describe = styled.text`
+  line-height: 30px;
+  font-size: 18px;
+  color: #fff;
+  font-family: monospace;
+`;

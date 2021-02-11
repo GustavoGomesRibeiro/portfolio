@@ -73,7 +73,7 @@ export default function Knowledge() {
           <Techs>
             <FaAngular size={60} color="#d6002f" />
             <Stack> AngularJs </Stack>
-            <Stack> Conhecimento Básico </Stack>
+            <StackKnowledge> Conhecimento Básico </StackKnowledge>
           </Techs>
           <Techs>
             <FaJava size={60} color="#d6002f" />

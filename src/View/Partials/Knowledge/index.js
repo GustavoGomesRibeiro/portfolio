@@ -24,7 +24,7 @@ import {
 export default function Knowledge() {
   return (
     <Container>
-      <Section>
+      <Section id="knowledge">
         <Title>
           <MyKnowledge> Knowledge </MyKnowledge>
         </Title>

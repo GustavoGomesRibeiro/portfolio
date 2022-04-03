@@ -13,7 +13,7 @@ import {
 export default function Project() {
   return (
     <Container>
-      <Section>
+      <Section id="project">
         <Title>
           <MyProjects> Projects </MyProjects>
         </Title>

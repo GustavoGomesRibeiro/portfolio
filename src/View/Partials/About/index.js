@@ -12,12 +12,12 @@ import {
   ButtonLinkedIn,
   TextLinkedIn,
 } from './styles';
-import code from '../../assets/img/code.png';
+import code from '../../../assets/img/code.png';
 
 export default function About() {
   return (
     <Container>
-      <Section>
+      <Section id="about">
         <Header>
           <Title>
             <img src={code} alt="code" style={{ width: '50%' }} />

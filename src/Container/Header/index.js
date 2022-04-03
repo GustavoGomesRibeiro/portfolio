@@ -1,4 +1,5 @@
 import React from 'react';
+// import Switch from 'react-switch';
 import {
   Container,
   HeaderContainer,
@@ -9,6 +10,7 @@ import {
   Projects,
   Knowledge,
   Contact,
+  // DarkTheme
 } from './styles';
 
 export default function Header() {
@@ -17,18 +19,21 @@ export default function Header() {
       <HeaderContainer>
         <Logo> .Gomes() </Logo>
         <Details>
-          <Button>
+          <Button href="#about">
             <About>.about()</About>
           </Button>
-          <Button>
+          <Button href="#knowledge">
             <Knowledge>.knowledge()</Knowledge>
           </Button>
-          <Button>
+          <Button href="#project">
             <Projects>.projects()</Projects>
           </Button>
-          <Button>
+          <Button href="#contact">
             <Contact>.contact()</Contact>
           </Button>
+          {/* <DarkTheme>
+            <Switch />
+          </DarkTheme> */}
         </Details>
       </HeaderContainer>
     </Container>

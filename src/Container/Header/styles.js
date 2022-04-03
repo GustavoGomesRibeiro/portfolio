@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  /* height: 100%; */
-`;
+export const Container = styled.div``;
+
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
@@ -22,14 +21,11 @@ export const Details = styled.div`
   margin-left: auto;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   border: none;
   background: none;
   margin-left: 10px;
-  /* &:hover {
-    transition: 0.5s;
-    border-bottom: 4px solid #682ae9;
-  } */
+  text-decoration: none;
 `;
 
 export const About = styled.text`
@@ -72,4 +68,8 @@ export const Contact = styled.text`
     transition: 0.5s;
     color: #682ae9;
   }
+`;
+
+export const DarkTheme = styled.div`
+  margin-left: 10px;
 `;

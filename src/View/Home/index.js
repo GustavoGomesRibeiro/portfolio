@@ -1,10 +1,10 @@
-import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaGithub, FaArrowCircleUp } from 'react-icons/fa';
 import Header from '../../Container/Header';
-import About from '../About/index';
-import Knowledge from '../Knowledge/index';
-import Project from '../Projects/index';
-import Contact from '../Contact/index';
+import About from '../Partials/About/index';
+import Knowledge from '../Partials/Knowledge/index';
+import Project from '../Partials/Projects/index';
+import Contact from '../Partials/Contact/index';
 import Footer from '../../Container/Footer';
 import {
   Container,
@@ -21,9 +21,26 @@ import {
   GitHub,
   ButtonGit,
   TextGit,
+  Icon
 } from './styles';
 
 export default function Index() {
+  const [showScroll, setShowScroll] = useState(false);
+
+  const checkScroll = () => {
+    if (!showScroll && window.pageYOffset > 900) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 900) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.addEventListener('scroll', checkScroll);
+
   return (
     <Container>
       <Section>
@@ -62,6 +79,13 @@ export default function Index() {
       <Project />
       <Contact />
       <Footer />
+      <Icon>
+        <FaArrowCircleUp
+          className="scrollTop"
+          onClick={scrollTop}
+          style={{ height: 40, color: '#fff', display: showScroll ? 'flex' : 'none' }}
+        />
+      </Icon>
     </Container>
   );
 }

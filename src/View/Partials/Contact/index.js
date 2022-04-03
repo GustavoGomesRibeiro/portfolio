@@ -4,7 +4,7 @@ import { Container, Section, Title, MyContact } from './styles';
 export default function Contact() {
   return (
     <Container>
-      <Section>
+      <Section id="contact">
         <Title>
           <MyContact> Contact </MyContact>
         </Title>
